@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chethan M - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('techy.jpg') no-repeat center center/cover;
+            color: #fff;
+        }
+
+        header.hero {
+            text-align: center;
+            padding: 5rem 2rem;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .hero nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .hero nav ul li {
+            margin: 0 1rem;
+        }
+
+        .hero nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .hero nav ul li a:hover {
+            color: #ff9800;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            padding: 0.8rem 2rem;
+            background: #ff9800;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #e68a00;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            color: #ff9800;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #ff9800;
+            padding-bottom: 0.5rem;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .about img {
+            border-radius: 10px;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border: 3px solid #ff9800;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: space-evenly;
+        }
+
+        .skill {
+            background: #222;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1 1 30%;
+            min-width: 150px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .project {
+            background: #222;
+            padding: 1.5rem;
+            border-radius: 8px;
+            flex: 1 1 45%;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .contact-form label {
+            font-size: 1.1rem;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            background: #333;
+            color: #fff;
+        }
+
+        .contact-form textarea {
+            resize: none;
+        }
+
+        .contact-form button {
+            padding: 0.8rem 1.5rem;
+            background: #ff9800;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #e68a00;
+        }
+
+        footer {
+            text-align: center;
+            background: #111;
+            padding: 2rem 0;
+            color: #fff;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 2rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #ff9800;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Chethan M</h1>
+            <p>Software Developer | Web Enthusiast | Problem Solver</p>
+            <a href="resume.pdf" class="btn" target="_blank">View My Resume</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about">
+                <img src="photo1.jpg" alt="Chethan M">
+                <p>I am a passionate and dedicated software developer with experience in building scalable and efficient web and backend solutions. With expertise in Java, Hibernate, and web development technologies, I bring creativity and technical proficiency to every project. I am committed to continuous learning and innovation, ensuring that my skills stay ahead in this ever-evolving tech landscape.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">Java</div>
+                <div class="skill">HTML, CSS, JavaScript</div>
+                <div class="skill">SQL</div>
+                <div class="skill">Hibernate</div>
+                <div class="skill">Collections Framework</div>
+                <div class="skill">Linux Commands</div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Visitor Management System</h3>
+                    <p>Developed using SQL, PHP, HTML, and CSS, hosted on XAMPP for seamless performance. Improved security and operational efficiency with robust database structures.</p>
+                    <p>Features include role-based access, detailed visitor logs, and real-time notifications for visitors and administrators.</p>
+                </div>
+                <div class="project">
+                    <h3>Yoga Pose Recognition</h3>
+                    <p>Implemented using TensorFlow/Keras with over 90% accuracy, featuring a user-friendly Gradio interface for real-time predictions.</p>
+                    <p>Integrated additional preprocessing techniques for better accuracy and developed an intuitive dashboard for tracking pose analysis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="mailto:chethanm2104@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            
+                <button type="submit">Send Message</button>
+            </form>
+            
+
+            <div class="social-icons">
+                <a href="mailto:chethanm2104@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/yourusername" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Chethan M. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
